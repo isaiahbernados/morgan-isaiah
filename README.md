@@ -19,3 +19,6 @@ _See [wedding.rampatra.com](http://wedding.rampatra.com/) for a demo. Use invite
 2. `$ npm install` - install dependencies _(optional)_
 3. `$ gulp` - compile sass to css, minify js, etc. _(optional)_
 4. That's it, open `index.html` on your browser by just double-clicking on the file.
+
+# Docs:
+https://blog.rampatra.com/wedding-website

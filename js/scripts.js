@@ -218,7 +218,9 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
+            // Updated URL for new REST API for Isaiah and Morgan
+            $('#alert-wrapper').html(alert_markup('info', '<strong>It posted!</strong> We are saving your details.'));
+            $.post('https://script.google.com/macros/s/AKfycbzn1zoiFDs1Bobd-zTVA-MSWfIUAGpTrRN-uPoYxs3xwr2U7R8/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
